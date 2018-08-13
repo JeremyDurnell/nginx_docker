@@ -1,0 +1,13 @@
+{
+    "name": "app1",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "jeremydurnell@gmail.com",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1"
+    }
+  }

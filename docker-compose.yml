@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nginx:
+    image: nginx
+    ports:
+        - 8080:8080
+        - 8081:8081
+    restart: always
+
+  app1:
+    depends_on:
+      - nginx
+    build: "app1/."
+    restart: always
+
+  app2:
+    depends_on:
+      - nginx
+    build: "app2/."
+    restart: always
